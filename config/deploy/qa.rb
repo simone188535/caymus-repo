@@ -7,8 +7,8 @@ server "50.204.240.31",
   user: "prdev",
   roles: %w{app db web},
   ssh_options: {
-    user: "jenkins", # overrides user setting above
-    keys: %w(/var/lib/jenkins/.ssh/id_rsa),
+    user: "gitlab-runner", # overrides user setting above
+    keys: %w(/home/gitlab-runner/.ssh/id_rsa),
     forward_agent: true,
     auth_methods: %w(publickey password)
 }
