@@ -3,7 +3,7 @@
 #  user: "prdev",
 
 # new QA server, now with PHP 7.1.25
-server "172.16.0.92",
+server "50.204.240.31",
   user: "devuser",
   roles: %w{app db web},
   ssh_options: {
