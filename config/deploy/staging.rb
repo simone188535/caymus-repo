@@ -12,8 +12,8 @@ server "50.204.240.31",
     forward_agent: true,
     auth_methods: %w(publickey password)
 }
-set :deploy_to, '/var/www/qa-caymusequity.purered.net'
-set :branch, proc { `git rev-parse --abbrev-ref qa`.chomp }
+set :deploy_to, '/var/www/staging-caymusequity.purered.net'
+set :branch, proc { `git rev-parse --abbrev-ref staging`.chomp }
 
 set :web_user, 'apache'
 
