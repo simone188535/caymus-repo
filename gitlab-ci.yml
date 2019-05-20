@@ -1,0 +1,30 @@
+stages:
+  - deploy
+  
+deploy_qa:
+  environment: qa
+  stage: deploy
+  script:
+    - bundle install --path vendor/bundle
+    - bundle exec cap qa deploy --trace
+  only:
+    - qa
+
+deploy_staging:
+  environment: staging
+  stage: deploy
+  script:
+    - bundle install --path vendor/bundle
+    - bundle exec cap staging deploy --trace
+  only:
+    - staging
+
+deploy_master:
+  environment: master
+  stage: deploy
+  script:
+    - bundle install --path vendor/bundle
+    - bundle exec cap production deploy --trace
+  only:
+    - master
+  when: manual
