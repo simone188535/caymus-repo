@@ -4,7 +4,7 @@
 
 # new QA server, now with PHP 7.1.25
 server "50.204.240.31",
-  user: "devuser",
+  user: "prdev",
   roles: %w{app db web},
   ssh_options: {
     user: "jenkins", # overrides user setting above
