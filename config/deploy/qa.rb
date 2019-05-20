@@ -12,7 +12,7 @@ server "172.16.0.92",
     forward_agent: true,
     auth_methods: %w(publickey password)
 }
-set :deploy_to, '/var/www/qa-caymus.purered.net'
+set :deploy_to, '/var/www/qa-caymusequity.purered.net'
 set :branch, proc { `git rev-parse --abbrev-ref qa`.chomp }
 
 set :web_user, 'apache'
