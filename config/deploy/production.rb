@@ -7,8 +7,9 @@ server "caymusequity.com",
     forward_agent: true,
     auth_methods: %w(publickey password)
 }
-set :deploy_to, '/home/177433/users/.home/domains/caymusequity.com/test/'
+set :deploy_to, '/home/177433/users/.home/domains/caymusequity.com/'
 set :branch, proc { `git rev-parse --abbrev-ref master`.chomp }
+
 
 # server-based syntax
 # ======================
