@@ -1,5 +1,5 @@
 server "caymusequity.com",
-  user: "caymusequity",
+  user: "caymusequity.com",
   roles: %w{app db web},
   ssh_options: {
     user: "gitlab-runner", # overrides user setting above
