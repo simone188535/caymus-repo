@@ -10,8 +10,6 @@ server "caymusequity.com",
 set :deploy_to, '/home/177433/users/.home/domains/caymusequity.com/test/'
 set :branch, proc { `git rev-parse --abbrev-ref master`.chomp }
 
-set :web_user, 'apache'
-
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
