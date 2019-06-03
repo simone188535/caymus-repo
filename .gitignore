@@ -1,0 +1,77 @@
+# Captain's Log, Mate's Log, we don't want it.
+*.log
+
+# Job's files
+.DS_Store
+
+# doodles
+.scratch
+.idea
+
+# configs and backups and cetera (oh my!)
+info.php
+wp-config.php
+html/wp-config.php
+html/wp-content/advanced-cache.php
+html/wp-content/backup-db/
+html/wp-content/backups/
+html/wp-content/blogs.dir/
+html/wp-content/cache/
+html/wp-content/upgrade/
+html/wp-content/uploads/
+html/wp-content/wp-cache-config.php
+html/wp-content/wflogs/
+
+# WordPress droppings
+html/license.txt
+html/readme.html
+html/wp-config-sample\.php
+html/wp-content/plugins/hello.php
+html/wp-content/plugins/akismet/
+html/wp-content/themes/twenty*
+
+# Query Monitor DB override file
+html/wp-content/db.php
+
+# dynamically generated files
+html/sitemap.xml
+html/sitemap.xml.gz
+
+# NodeJS modules!
+node_modules/
+
+# symlink to the theme
+theme
+
+# Bootstrap SCSS files in the theme
+html/wp-content/themes/**/assets/scss/bootstrap/
+
+# backups
+_bak_*
+bak_*
+*_bak
+*\.bak
+bak\.*
+backup\.*
+!backup.php
+*\.backup
+
+# no zips
+*\.zip
+*\.gz
+
+# no environment stuff (maybe)
+env/
+
+# no 2FA
+content/_2FA/
+2fa-key
+
+# deployments directory
+deployments/
+
+# hahaa
+lolsec/
+
+# Vagrant image
+.vagrant/
