@@ -42,7 +42,7 @@ Template Name: Portfolio
                     Ongoing involvement is a key element of our investment process. With over 40 years of operating experience, we have established a reputation as hands-on, responsible investors that provide consistent guidance and support to drive growth in partnership with management.
                     <hr>
                     <?php
-					    $mypost = array( 'post_type' => 'current_portfolio', );
+					    $mypost = array( 'post_type' => 'current_portfolio','order' => 'ASC', );
 					    $loop = new WP_Query( $mypost );
 					?>
 					<?php while ( $loop->have_posts() ) : $loop->the_post();?>		
