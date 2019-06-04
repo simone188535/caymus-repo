@@ -29,8 +29,8 @@ Template Name: Portfolio
 <div class="row" id="portfolio-section">
 	<div class="tabbable tabs-left">
 	<ul class="nav nav-tabs span3">
-                <li class="active"><a href="#current" data-toggle="tab" id="current-tab">Current</a></li>
-                <li class=""><a href="#past" data-toggle="tab" id="past-tab">Past</a></li>
+                <li class="active"><a href="#current" data-toggle="tab" id="current-tab">Portfolio</a></li>
+                <li class=""><a href="#past" data-toggle="tab" id="past-tab">Exited Investments</a></li>
                 <li class=""><a href="#all" data-toggle="tab" id="all-tab">All</a></li>
                 <li class=""><a href="#case-study" data-toggle="tab" id="case-study-tab">Case Studies</a></li>
               </ul>
