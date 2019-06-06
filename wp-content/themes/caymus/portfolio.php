@@ -142,10 +142,10 @@ foreach($checkboxvalue as $key => $check){
                             } 
                     ?>
                     <?php if( get_field('exit_date') ): ?>
-                      Exit Date: <?php echo the_field('exit_date'); ?>
+                      Exit Date: <?php echo the_field('exit_date'); ?><br/>
                     <?php endif; ?>
                     <?php if( get_field('case_study_field') ): ?>
-                      <a href="http://<?php echo the_field('case_study_field'); ?>">Case Study</a>
+                      <a href="http://<?php echo the_field('case_study_field'); ?>">Case Study</a><br/>
                     <?php endif; ?>
 
                     <!--Website: <a href="http://<?php the_field('business_website'); ?>" target="_blank"><?php the_field('business_website'); ?></a><br />-->
