@@ -142,7 +142,7 @@ foreach($checkboxvalue as $key => $check){
                             } 
                     ?>
                     <?php if( get_field('exit_date') ): ?>
-                      <?php echo "Exit Date: ".the_field('exit_date'); ?>
+                      Exit Date: <?php echo the_field('exit_date'); ?>
                     <?php endif; ?>
 
                     <!--Website: <a href="http://<?php the_field('business_website'); ?>" target="_blank"><?php the_field('business_website'); ?></a><br />-->
