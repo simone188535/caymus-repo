@@ -32,7 +32,7 @@ Template Name: Portfolio
                 <li class="active"><a href="#current" data-toggle="tab" id="current-tab">Portfolio</a></li>
                 <li class=""><a href="#past" data-toggle="tab" id="past-tab">Exited Investments</a></li>
                 <li class=""><a href="#all" data-toggle="tab" id="all-tab">All</a></li>
-                <li class=""><a href="#case-study" data-toggle="tab" id="case-study-tab">Case Studies</a></li>
+                <!-- <li class=""><a href="#case-study" data-toggle="tab" id="case-study-tab">Case Studies</a></li> -->
               </ul>
  <div class="tab-content">
  <div class="tab-pane active fade in" id="current">
@@ -71,9 +71,9 @@ Template Name: Portfolio
         <li class="" id="niche-filter"><a href="javascript:void(0)">Niche Manufacturing</a></li>
       </ul>
  </div>
-  <div class="tab-pane fade in" id="case-study">
+<!--   <div class="tab-pane fade in" id="case-study"> -->
   	<!-- Loop Case Studies-->
-  	<?php
+<!--   	<?php
     $mypost = array( 'post_type' => 'case_study', );
     $loop = new WP_Query( $mypost );
 ?>				                  
@@ -91,8 +91,8 @@ Template Name: Portfolio
                   <div id="<?php echo get_the_ID();?>3" class="collapse"><p><?php the_field('case_strategy'); ?></p></div>
                   </span>
                   <hr>
-  <?php endwhile; ?>                 
-</div>
+  <?php endwhile; ?>   -->               
+<!-- </div> -->
 <!-- Loop Portfolio Fields -->                              	
 <div class="accordion" id="portfolio">
 <?php
