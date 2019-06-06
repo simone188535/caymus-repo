@@ -52,7 +52,13 @@ Template Name: Portfolio
                   <p><?php the_content(); ?></p><br />
                   <p>
                     Location: <?php the_field('current_co_location'); ?><br />
-                    Website: <a href="http://<?php the_field('current_co_website'); ?>" target="_blank"><?php the_field('current_co_website'); ?></a>
+                    Website: <a href="http://<?php the_field('current_co_website'); ?>" target="_blank"><?php the_field('current_co_website'); ?></a><br/>
+                    <?php if( get_field('exit_date') ): ?>
+                      <?php echo "Exit Date: ".the_field('exit_date'); ?><br/>
+                    <?php endif; ?>
+                    <?php if( get_field('case_study_field') ): ?>
+                      <a href="http://<?php echo the_field('case_study_field'); ?>">Case Study</a>
+                    <?php endif; ?>
                   </p>
                 </span>
                  <hr>
@@ -136,7 +142,7 @@ foreach($checkboxvalue as $key => $check){
                             } 
                     ?>
                     <?php if( get_field('exit_date') ): ?>
-                      Exit Date: <?php echo the_field('exit_date'); ?>
+                      <?php echo "Exit Date: ".the_field('exit_date'); ?>
                     <?php endif; ?>
 
                     <!--Website: <a href="http://<?php the_field('business_website'); ?>" target="_blank"><?php the_field('business_website'); ?></a><br />-->
