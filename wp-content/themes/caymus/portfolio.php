@@ -138,7 +138,7 @@ foreach($checkboxvalue as $key => $check){
                             }
                           else
                             {
-                              echo 'Website:<a href="http://' . $field1['value'] . '" target="_blank">'. $field1['value'] .'</a><br />';
+                              echo 'Website: <a href="http://' . $field1['value'] . '" target="_blank">'. $field1['value'] .'</a><br />';
                             } 
                     ?>
                     <?php if( get_field('exit_date') ): ?>
