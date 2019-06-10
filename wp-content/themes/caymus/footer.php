@@ -37,7 +37,7 @@
 	</div>
 </div>
 <div id="footer-info" class="wrap">
-	<p><a href="<?php bloginfo('url'); ?>">Home</a>   |   <a href="/privacy-policy">Privacy Policy</a>   |   <a href="/terms-and-conditions">Terms &amp; Conditions</a>   |   © Copyright 2017 Caymus Equity Partners LLC</p>
+	<p><a href="<?php bloginfo('url'); ?>">Home</a>   |   <a href="/privacy-policy">Privacy Policy</a>   |   <a href="/terms-and-conditions">Terms &amp; Conditions</a>   |   © Copyright <?php echo date("Y"); ?> Caymus Equity Partners LLC</p>
 </div>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.js" type="text/javascript"></script>
