@@ -41,12 +41,18 @@ $(document).ready(function() {
     $("#portfolio").hide();
  });
 
-$("#past-tab").click(function(){
-    $(".all").show();
-    $(".current").hide();
-    $("#portfolio").show();
-});
+// $("#exited-tab").click(function(){
+//     $(".all").show();
+//     $(".current").hide();
+//     $("#portfolio").show();
+// });
 $("#current-tab").click(function(){
+    $("#portfolio").hide();
+});
+
+$("#exited-tab").click(function(){
+    $(".all").hide();
+    $(".current").hide();
     $("#portfolio").hide();
 });
 $("#all-tab").click(function(){
@@ -69,7 +75,7 @@ $("#bs-filter").click(function(){
 });
 $("#hs-filter").click(function(){
     //$(".all").show();
-    $("#filter-nav li").removeClass("disabled");
+    $("#filter-nav li").removeClass("disabled"); 
     $("#hs-filter").addClass("disabled");
     $(".bs").hide(300);
     $(".consumer").hide(300);
