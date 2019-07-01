@@ -95,13 +95,14 @@ Template Name: Portfolio
 
 </div>
  <div class="tab-pane fade in" id="all">
-      <ul class="nav nav-pills" id="filter-nav">
+      <!-- leaving this incase it is needed later. -->
+      <!-- <ul class="nav nav-pills" id="filter-nav">
         <li class="disabled" id="all-filter"><a href="javascript:void(0)">All</a></li>
         <li class="" id="bs-filter"><a href="javascript:void(0)">Business Services</a></li>
         <li class="" id="hs-filter"><a href="javascript:void(0)">Healthcare Services</a></li>
         <li class="" id="consumer-filter"><a href="javascript:void(0)">Consumer</a></li>
         <li class="" id="niche-filter"><a href="javascript:void(0)">Niche Manufacturing</a></li>
-      </ul>
+      </ul> -->
  </div>
 
 <!-- Loop Portfolio Fields -->                                
