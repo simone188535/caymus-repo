@@ -21,6 +21,7 @@ html/wp-content/upgrade/
 html/wp-content/uploads/
 html/wp-content/wp-cache-config.php
 html/wp-content/wflogs/
+wp-content/uploads/
 
 # WordPress droppings
 html/license.txt
