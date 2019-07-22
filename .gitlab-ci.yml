@@ -18,13 +18,3 @@ deploy_staging:
     - bundle exec cap staging deploy --trace
   only:
     - staging
-
-deploy_master:
-  environment: master
-  stage: deploy
-  script:
-    - bundle install --path vendor/bundle
-    - bundle exec cap production deploy --trace
-  only:
-    - master
-  when: manual
