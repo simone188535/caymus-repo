@@ -5,7 +5,7 @@ set :application, "caymus-equity"
 set :repo_url, "git@gitlab.com:caymus-equity/wordpress.git"
 
 # config/deploy.rb
-set :linked_dirs,  [ "html/wp-content/uploads" ]
+set :linked_dirs,  [ "wp-content/uploads" ]
 set :linked_files, [ "wp-config.php" ]
 
 # Default branch is :master
