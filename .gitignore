@@ -11,32 +11,32 @@
 # configs and backups and cetera (oh my!)
 info.php
 wp-config.php
-html/wp-config.php
-html/wp-content/advanced-cache.php
-html/wp-content/backup-db/
-html/wp-content/backups/
-html/wp-content/blogs.dir/
-html/wp-content/cache/
-html/wp-content/upgrade/
-html/wp-content/uploads/
-html/wp-content/wp-cache-config.php
-html/wp-content/wflogs/
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/wflogs/
 wp-content/uploads/
 
 # WordPress droppings
-html/license.txt
-html/readme.html
-html/wp-config-sample\.php
-html/wp-content/plugins/hello.php
-html/wp-content/plugins/akismet/
-html/wp-content/themes/twenty*
+license.txt
+readme.html
+wp-config-sample\.php
+wp-content/plugins/hello.php
+wp-content/plugins/akismet/
+wp-content/themes/twenty*
 
 # Query Monitor DB override file
-html/wp-content/db.php
+wp-content/db.php
 
 # dynamically generated files
-html/sitemap.xml
-html/sitemap.xml.gz
+sitemap.xml
+sitemap.xml.gz
 
 # NodeJS modules!
 node_modules/
@@ -45,7 +45,7 @@ node_modules/
 theme
 
 # Bootstrap SCSS files in the theme
-html/wp-content/themes/**/assets/scss/bootstrap/
+wp-content/themes/**/assets/scss/bootstrap/
 
 # backups
 _bak_*
