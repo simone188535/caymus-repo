@@ -95,7 +95,7 @@ Template Name: Portfolio
 
 </div>
  <div class="tab-pane fade in" id="all">
-      <!-- leaving this incase it is needed later. -->
+  <!-- leaving this incase it is needed later. -->
       <!-- <ul class="nav nav-pills" id="filter-nav">
         <li class="disabled" id="all-filter"><a href="javascript:void(0)">All</a></li>
         <li class="" id="bs-filter"><a href="javascript:void(0)">Business Services</a></li>
@@ -103,7 +103,7 @@ Template Name: Portfolio
         <li class="" id="consumer-filter"><a href="javascript:void(0)">Consumer</a></li>
         <li class="" id="niche-filter"><a href="javascript:void(0)">Niche Manufacturing</a></li>
       </ul> -->
- </div>
+ </div> 
 
 <!-- Loop Portfolio Fields -->                                
 <div class="accordion" id="portfolio">
@@ -119,14 +119,15 @@ foreach($checkboxvalue as $key => $check){
     $biztype .= ' '.$check; //$biztype will store class1 class2 class3
 };
 
-?>
+?> 
   <div class="accordion-group all<?php echo $biztype; $biztype = '';?>">
-    <div class="accordion-heading">
+    <!-- <div class="accordion-heading">
       <a class="accordion-toggle portfolio-toggle plus" data-toggle="collapse" data-parent="#portfolio" href="#company<?php echo get_the_ID();?>">
         <?php the_title(); ?>
       </a>
     </div>
-    <div id="company<?php echo get_the_ID();?>" class="accordion-body collapse">
+    <div id="company<?php echo get_the_ID();?>" class="accordion-body collapse"> -->
+    <div id="company<?php echo get_the_ID();?>" > 
       <div class="accordion-inner">
           <span class="span2"><?php the_post_thumbnail('portfolio_companies'); ?></span> 
                   <span class="span6">
@@ -156,7 +157,7 @@ foreach($checkboxvalue as $key => $check){
 
                     <!--Website: <a href="http://<?php the_field('business_website'); ?>" target="_blank"><?php the_field('business_website'); ?></a><br />-->
                   </p>
-                </span> 
+                </span>
                   <hr>
       </div>
     </div>
