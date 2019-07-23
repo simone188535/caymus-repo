@@ -23,7 +23,7 @@ if($(this).find(".continue-reading").hasClass('minus'))
         //$(".continue-reading").removeClass("minus");
         $(this).find(".continue-reading").addClass("minus");
   }
-});
+}); 
 
 $(document).ready(function() {
   if(window.location.hash == $('#collapse1').attr('href')) {
@@ -75,7 +75,7 @@ $("#bs-filter").click(function(){
 });
 $("#hs-filter").click(function(){
     //$(".all").show();
-    $("#filter-nav li").removeClass("disabled"); 
+    $("#filter-nav li").removeClass("disabled");
     $("#hs-filter").addClass("disabled");
     $(".bs").hide(300);
     $(".consumer").hide(300);
@@ -102,14 +102,14 @@ $("#niche-filter").click(function(){
 });
 $("#case-study-tab").click(function(){
     $("#portfolio").hide();
-});
-
-$(".portfolio-toggle").click(function () {
-if($(this).hasClass('minus'))
-    {
-        $(this).removeClass("minus");
-    }else{
-        $(".portfolio-toggle").removeClass("minus");
-        $(this).addClass("minus");
-  }
-});   
+}); 
+ 
+// $(".portfolio-toggle").click(function () {
+// if($(this).hasClass('minus'))
+//     {
+//         $(this).removeClass("minus");
+//     }else{
+//         $(".portfolio-toggle").removeClass("minus");
+//         $(this).addClass("minus");
+//   }
+// });   
