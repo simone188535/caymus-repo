@@ -30,7 +30,7 @@ li{
     font-size: 12px
   }
 #main-content{
-    padding-left: 20px;
+    padding: 0 20px;
     min-height: 550px;
 }
 .subHead {
@@ -80,6 +80,11 @@ li{
   }
   #caymus-different i{
     margin-left: 10px;
+  }
+  #caymus-different span.half-width{
+    width: 50%;
+    /*display:inline;
+    display: block;*/
   }
   #caymus-different.row {
     margin-left: 0px;
@@ -436,11 +441,22 @@ background-color: #003C4B;
 .read-more:hover{
     color: #6BA2B8;
 }
-#feature-section li{
+#feature-section li, .feature-section li{
     list-style: none;
 }
-#feature-section .row {
+#feature-section .row, .feature-section .row {
 margin-left: -2px;
+}
+.news-section{
+      margin: 0;
+    margin-left: 10%;
+}
+
+#main-content .adjoined-section{
+  float: left;
+}
+.remove-float{
+  clear: both;
 }
 .caption h3{
     font-size: 14px;
@@ -843,6 +859,12 @@ position: inherit;
 }
 #company-info{
     text-align: center;
+}
+.news-section{
+  margin: 0;
+}
+.news-section-container{
+  width: 100%;
 }
 #foot-divider{
     display: none;
