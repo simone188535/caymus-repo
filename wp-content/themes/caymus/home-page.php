@@ -96,7 +96,7 @@ Template Name: Home Page
       
 		<?php endwhile; endif; ?> 
     <div class="row feature-section news-section-container adjoined-section">
-    <ul class="news-section">
+    <ul class="news-section">  
          <li class="span3">
              <div class="thumbnail" id="news">
                 <div class="caption">

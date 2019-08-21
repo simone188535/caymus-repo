@@ -67,6 +67,7 @@ li{
     font-weight: normal;
     font-size: 22px;
     margin: 0px 0px 0px 20px;
+    float: left;
   }
   #caymus-different h5{
     color: #BBD2DB;
@@ -86,6 +87,7 @@ li{
     /*display:inline;
     display: block;*/
   }
+
   #caymus-different.row {
     margin-left: 0px;
   }
