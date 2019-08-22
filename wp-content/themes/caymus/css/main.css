@@ -88,7 +88,6 @@ li{
     /*display:inline;
     display: block;*/
   }
-
   #caymus-different.row {
     margin-left: 0px;
   }
@@ -486,7 +485,7 @@ margin-left: -2px;
     border-radius: 7px;
     border: 2px solid #003C4B;
 }
-.carousel-control {  
+.carousel-control {
     position: absolute;
     top: 50%;
     left: -40px;
@@ -676,7 +675,6 @@ margin: 10px 0px;
 .direction-wrap {
     padding-bottom: 8px !important;
 }
-
 
  }
 
@@ -917,6 +915,10 @@ display: none;
 }
 #case-study img {
 float: none !important;
+}
+.accordion-inner img {
+    margin: 0 auto;
+    display: block;
 }
 
 }
