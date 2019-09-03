@@ -1,12 +1,21 @@
 
+AddHandler php-stable .php
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+@@ -11,15 +10,3 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+# BEGIN (mt) controlled settings
+<IfModule !mod_fcgid.c>
+  AddHandler php-stable .php
+</IfModule>
+<IfModule mod_fcgid.c>
+  AddHandler fcgid-script .php
+  <Files *.php>
+    Options +ExecCGI
+  </Files>
+</IfModule>
+# END (mt) controlled settings
