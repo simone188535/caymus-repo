@@ -30,7 +30,7 @@ li{
     font-size: 12px
   }
 #main-content{
-    padding-left: 20px;
+    padding: 0 20px;
     min-height: 550px;
 }
 .subHead {
@@ -53,35 +53,45 @@ li{
 .minus{
     background: #FFFFFF url("../img/minus.png") no-repeat left center;
  }
- a#caymus-different{
+ a.caymus-different{
     display: block;
     color: #BBD2DB;
     background-color: #003C4B;
     margin: 10px 0px;
     text-decoration: none;
   }
-  a#caymus-different:hover{
+  a.caymus-different:hover{
     background-color: #66A2B9;
   }
-  #caymus-different h3{
+.caymus-different .width-auto{
+  width: auto;
+}
+.caymus-different .half-width{
+  width: 50%;
+}
+  .caymus-different h3{
     font-weight: normal;
     font-size: 22px;
     margin: 0px 0px 0px 20px;
+    float: left;
   }
-  #caymus-different h5{
+  .caymus-different h5{
     color: #BBD2DB;
     text-align: right;
   }
-  #caymus-different:hover{ 
+  .caymus-different:hover{ 
   background-color: #003C4B; 
   }
-  #caymus-different span.span6{
+  .caymus-different span.span6{
     margin-left: 90px;
   }
-  #caymus-different i{
+  .caymus-different i{
     margin-left: 10px;
   }
-  #caymus-different.row {
+  /*.caymus-different span.half-width{
+    width: 50%;
+  }*/
+  .caymus-different.row {
     margin-left: 0px;
   }
   .accordion-inner{
@@ -436,11 +446,22 @@ background-color: #003C4B;
 .read-more:hover{
     color: #6BA2B8;
 }
-#feature-section li{
+#feature-section li, .feature-section li{
     list-style: none;
 }
-#feature-section .row {
+#feature-section .row, .feature-section .row {
 margin-left: -2px;
+}
+.news-section{
+      margin: 0;
+    margin-left: 10%;
+}
+
+#main-content .adjoined-section{
+  float: left;
+}
+.remove-float{
+  clear: both;
 }
 .caption h3{
     font-size: 14px;
@@ -467,7 +488,7 @@ margin-left: -2px;
     border-radius: 7px;
     border: 2px solid #003C4B;
 }
-.carousel-control {  
+.carousel-control {
     position: absolute;
     top: 50%;
     left: -40px;
@@ -646,7 +667,7 @@ margin: 10px 0px;
 .mobile-menu{
     display: none;
 }
-#caymus-different .span5 h3{
+.caymus-different h3{
     font-size: 20px;
 }
  }
@@ -657,7 +678,6 @@ margin: 10px 0px;
 .direction-wrap {
     padding-bottom: 8px !important;
 }
-
 
  }
 
@@ -740,13 +760,13 @@ right: 5px;
 #news {
     padding-bottom: 9px;
 }
-#caymus-different .span5{
+.caymus-different .span5{
     width:40%;
 }
-#caymus-different .span5 h3{
+.caymus-different h3{
     font-size: 16px;
 }
-#caymus-different .span6{
+.caymus-different .span6{
     width:45%;
     margin-left: 72px !important;
 }
@@ -844,6 +864,12 @@ position: inherit;
 #company-info{
     text-align: center;
 }
+.news-section{
+  margin: 0;
+}
+.news-section-container{
+  width: 100%;
+}
 #foot-divider{
     display: none;
 }
@@ -860,19 +886,19 @@ margin-right: 5px;
     padding-bottom: 9px;
 }
 
-#caymus-different .span5{
+.caymus-different .span5{
     display: inline;
     float: left;
     width:40% !important;
 }
-#caymus-different .span5 h3{
+.caymus-different h3{
     font-size: 16px;
 }
-#caymus-different .span6{
+.caymus-different .span6{
     display: inline;
-    float: left;
+    /*float: left;
     width:45% !important;
-    margin-left: 72px !important;
+    margin-left: 72px !important;*/
 }
 .tab-content {
 overflow: inherit;
@@ -893,6 +919,10 @@ display: none;
 #case-study img {
 float: none !important;
 }
+.accordion-inner img {
+    margin: 0 auto;
+    display: block;
+}
 
 }
  
@@ -909,21 +939,21 @@ padding: 25px;
 .direction-wrap {
     background-image: none !important;
 }   
-#caymus-different .span5{
+.caymus-different .span5{
     display: block;
     float: none;
     width:100% !important;
 }
-#caymus-different .span5 h3{
+.caymus-different h3{
     font-size: 16px;
 }
-#caymus-different .span6{
+.caymus-different .span6{
     display: block;
     float: none;
     width:100% !important;
     margin-left: 0px !important;
 }
-#caymus-different .span6 h5{
+.caymus-different .span6 h5{
     text-align: left;
     margin: 10px 10px 10px 20px;
 }

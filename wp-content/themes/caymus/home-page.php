@@ -57,8 +57,8 @@ Template Name: Home Page
 </div>
 <div class="container" id="main-content">
 	<h1 class="subHead">What Makes Caymus Equity Different?</h1>
-	<div id="feature-section" class="row">
-		<ul class="row">
+	<div  class="row feature-section adjoined-section" >
+		<ul class="row pod-section">
       <?php the_content(); ?>
      <!--li class="span3">
              <div class="thumbnail">
@@ -91,7 +91,12 @@ Template Name: Home Page
                 </div>
              </div>
          </li-->
+      </ul>
+  </div>
+      
 		<?php endwhile; endif; ?> 
+    <div class="row feature-section news-section-container adjoined-section">
+    <ul class="news-section">  
          <li class="span3">
              <div class="thumbnail" id="news">
                 <div class="caption">
